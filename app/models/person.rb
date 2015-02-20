@@ -1,6 +1,7 @@
 class Person < ActiveRecord::Base
 
   validate :first_name_or_title
+  validates :last_name, presence: true
 
 
   def full_name

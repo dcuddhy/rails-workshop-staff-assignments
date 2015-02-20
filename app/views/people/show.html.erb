@@ -1,6 +1,8 @@
 <div class = "page-header">
   <div class = "pull-right">
+
+    <%= link_to '+Add Location', new_person_assignment(@person), class: 'btn btn-primary' %>
     <%= link_to 'Edit', edit_person_path(@person), class: 'btn btn-info' %>
   </div>
-    <h1><%= @person.full_name %></h1>
+  <h1><%= @person.full_name %></h1>
 </div>
